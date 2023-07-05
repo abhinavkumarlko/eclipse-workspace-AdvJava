@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+		Enter uid : <input type="text" name="uid" /> 
+		<br/>
+		Enter pwd : <input type="password" name="pwd" />
+		<br/>
+		Enter First Name : <input type="text" name="fname" /> 
+		<br/>
+		Enter Last Name : <input type="text" name="lname" />
+		<br/>
+		Enter Email-Id : <input type="email" name="email"/>
+		<br/>
+		Enter Contact no. : <input type="number" name="cnumber"/>
+		<input type="submit" value="LOGIN" />
+		<input type="reset" value="CLEAR" /> 
+</body>
+</html>

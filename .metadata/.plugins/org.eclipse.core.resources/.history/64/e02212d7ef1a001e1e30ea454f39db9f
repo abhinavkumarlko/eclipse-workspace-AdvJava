@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Home</title>
+</head>
+<body>
+	<h1>Dac Modules</h1>
+	<a href="http://localhost:8080/MyWebProj/java">Core Java</a>
+	<br/>
+	<a href="http://localhost:8080/MyWebProj/dbt">Database</a>
+	<br/>
+	<a href="http://localhost:8080/MyWebProj/wp">Web Programming</a>
+</body>
+</html>

@@ -1,0 +1,41 @@
+package assignment1;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class UpdateSal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Connection con =null;
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			
+			String jdbcUrl = "jdbc:mysql://localhost:3306/dac";
+			
+			 con = DriverManager.getConnection(jdbcUrl, "root", "root");
+			
+			System.out.println("connection established");
+			
+			Statement stmt = con.createStatement();
+			
+			int n = stmt.executeUpdate("update emp set sal=5599 where empno= 7934");
+			
+			System.out.println(n+" Records updated");
+			
+			stmt.close();
+			con.close();
+		}
+		catch(ClassNotFoundException e) {
+			System.out.println("driver class not found");
+		}
+		catch(SQLException e) {
+			System.out.println("connection rejected");
+		}
+
+	}
+
+}

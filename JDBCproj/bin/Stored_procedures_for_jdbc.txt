@@ -1,0 +1,6 @@
+delimiter $$
+create procedure empsdata()
+begin
+select * from emp;
+end $$
+delimiter ;

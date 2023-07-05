@@ -1,0 +1,22 @@
+package entities;
+
+public class Employee implements Comparable {
+	
+	private int empno;
+	private String ename;
+	private String job;
+	private float salary;
+	private int dept;
+	
+	public Employee() {
+		super();
+	}
+	public Employee(int empno,String ename,String job,float salary,int dept) {
+		super();
+		this.empno=empno;
+		this.ename=ename;
+		this.job=job;
+		this.salary=salary;
+		this.dept=dept;
+	}
+}

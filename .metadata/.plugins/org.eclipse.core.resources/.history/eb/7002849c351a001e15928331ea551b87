@@ -1,0 +1,47 @@
+package assignment1;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/register")
+public class RegisterServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+	  Connection con;
+      public void init(ServletConfig config) throws ServletException{
+   	   super.init(config);
+   	   try {
+  			Class.forName("com.mysql.cj.jdbc.Driver");
+  			
+  			String jdbcUrl = "jdbc:mysql://localhost:3306/shoppingdb";
+  			
+  			 con = DriverManager.getConnection(jdbcUrl, "root", "root");
+  			
+  			System.out.println("connection established");
+  		}
+   	   catch(Exception e) {
+   		   e.printStackTrace();
+   	   }
+      }
+    
+    public RegisterServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		
+	}
+
+}
