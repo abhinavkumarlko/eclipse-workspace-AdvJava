@@ -7,6 +7,17 @@
 <title>Insert title here</title>
 </head>
 <body>
+  <%-- <%
+    	Cookie [] allc = request.getCookies();
+    	if(allc != null)
+    	{
+    		for(Cookie c: allc)
+    		{
+    			if(c.getName().equals("loginerror"))
+    				out.println("<p> "+ c.getValue() + " </p>");
+    		}
+    	}
+    %> --%>
    ${cookie.loginerror.value}
 	<form action="http://localhost:8080/StateMangmnt/logincheck" method="post">
 		Enter uid : <input type="text" name="uid" /> 

@@ -40,10 +40,15 @@ public class GetEmps extends HttpServlet {
 			ps=con.prepareStatement("select * from emptemp where DEPTNO=?");
 			ps.setInt(1,deptno);
 			rs=ps.executeQuery();
-			out.println("<table>");
+			out.println("<table border='1'>");
 			while(rs.next())
 			{
-			//	out.println("<tr>"+ +"</tr>");
+				out.println("<tr>");
+				out.println("<td>"+ rs.getInt(1)+"</td>");
+				out.println("<td>"+ rs.getString(2)+"</td>");
+				out.println("<td>"+ rs.getInt(6)+"</td>");
+				out.println("<td>"+ rs.getInt(8)+"</td>");
+				out.println("<tr>");
 			}
 			out.println("</table>");
 		}
