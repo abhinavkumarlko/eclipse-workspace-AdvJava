@@ -13,9 +13,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Servlet implementation class GetProductsServlet
- */
 @WebServlet("/getProducts")
 public class GetProductsServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;

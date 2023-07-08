@@ -41,6 +41,7 @@ public class AddToCartServlet extends HttpServlet {
 		
 		if(products==null) //only on first selection
 		{
+			
 			products=new ArrayList<>(); //empty
 			
 		}
@@ -50,7 +51,7 @@ public class AddToCartServlet extends HttpServlet {
 		out.print("<br/> Selected product "+spid+"is added to the cart");
 		out.print("<br/> There are "+products.size()+"item's in the cart");
 		
-		out.print("<br/> <a href='viewcart'>View Cart<a/>");
+		out.print("<br/> <a href='viewcart.jsp'>View Cart<a/>");
 		out.print("<br/> <a href='home'>Go back to Categories <a/>");
 		
 	}
