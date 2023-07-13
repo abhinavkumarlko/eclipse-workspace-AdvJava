@@ -9,7 +9,7 @@ public class ConnectionTest {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			String jdbcUrl = "jdbc:mysql://localhost:3306/test";
 			Connection con = DriverManager.getConnection(jdbcUrl, "root", "root");
-			System.out.println("Connection established");
+			System.out.println("Connection established :"+con);
 
 	}
 
