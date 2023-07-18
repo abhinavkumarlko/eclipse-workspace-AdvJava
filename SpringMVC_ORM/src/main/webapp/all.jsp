@@ -8,6 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+		<h1>Emp data</h1>
 		<table border="1">
 				<c:forEach var="emp" items="${emplist}">
 				<tr>
@@ -15,11 +16,13 @@
 						<td>${emp.ename}</td>
 						<td>${emp.deptno}</td>
 						<td>${emp.salary}</td>
-						<td><a href="edit">edit</a> </td>
-						<td><a href="delete">delete</a></td>
+						<td><a href="edit?empid=${emp.empid}">edit</a> </td>
+						<td><a href="delete?empid=${emp.empid}">delete</a></td>
 				</tr>
 				</c:forEach>
 		</table>
+		
+		<a href="insert">Insert new ?</a>
 
 </body>
 </html>
